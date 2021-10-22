@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 # User Serializer
 
-"""
+
 from rest_framework import serializers
 from allauth.account.adapter import get_adapter
 from MyApi import settings
@@ -59,7 +59,7 @@ class UserDetailsSerializer(serializers.ModelSerializer):
         fields = ('pk', 'username', 'email', 'first_name',
                   'last_name', 'roles')
         read_only_fields = ('email', )
-        """
+        
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
